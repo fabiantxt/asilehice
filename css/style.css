@@ -1,0 +1,174 @@
+@import url("normalize.css");
+@import url("animate.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+a.link {
+  color: #2962FF;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 18px;
+  text-decoration: underline; }
+
+.container {
+  width: 700px;
+  margin: 0 auto; }
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 90%; } }
+
+body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  text-align: center;
+  color: #4A4A4A;
+  line-height: 23px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  -webkit-overflow-scrolling: touch; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+h2, h3 {
+  margin: 0;
+  font-family: "Archivo Black", sans-serif; }
+
+header {
+  border-bottom: solid 2px #2962FF;
+  padding: 16px 0;
+  text-align: left; }
+  header h1, header div.search {
+    display: inline-block;
+    vertical-align: middle; }
+  header h1 {
+    width: 300px;
+    font-size: 17px;
+    text-align: left; }
+    @media screen and (max-width: 768px) {
+      header h1 {
+        width: 100%; } }
+  header div.search {
+    width: 350px;
+    text-align: right; }
+    @media screen and (max-width: 768px) {
+      header div.search {
+        display: none; } }
+
+article {
+  padding: 40px 0;
+  text-align: left; }
+  article ul {
+    margin: 0;
+    padding: 0; }
+    article ul li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: inline; }
+      article ul li a.cat {
+        border: solid 2px #2962FF;
+        padding: 4px 6px;
+        border-radius: 3px;
+        text-decoration: none;
+        color: #2962FF;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        font-size: 14px; }
+        article ul li a.cat:hover {
+          background-color: #2962FF;
+          color: #fff; }
+  article h2 {
+    margin-top: 20px;
+    font-size: 60px;
+    line-height: 65px;
+    color: #232323; }
+    @media screen and (max-width: 768px) {
+      article h2 {
+        font-size: 53px;
+        line-height: 53px; } }
+  article img {
+    width: 120%;
+    margin-left: -10%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    @media screen and (max-width: 768px) {
+      article img {
+        width: 100%;
+        margin-left: 0; } }
+  article .author {
+    background-color: #2962FF;
+    color: #fff;
+    padding: 40px 0;
+    margin: 40px 0 0; }
+    article .author .blanco {
+      color: #fff; }
+
+section#comentarios {
+  text-align: left; }
+  section#comentarios h4 {
+    font-size: 26px;
+    font-family: "Archivo Black", sans-serif;
+    margin: 20px 0; }
+  @media screen and (max-width: 768px) {
+    section#comentarios img {
+      width: 100%; } }
+
+div.navegacion {
+  margin: 20px 0; }
+  div.navegacion div.anterior, div.navegacion div.siguiente {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    text-align: left;
+    margin-right: 5px;
+    line-height: 36px; }
+    @media screen and (max-width: 768px) {
+      div.navegacion div.anterior, div.navegacion div.siguiente {
+        width: 100%; } }
+    div.navegacion div.anterior p, div.navegacion div.siguiente p {
+      margin: 0; }
+    div.navegacion div.anterior a, div.navegacion div.siguiente a {
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      color: #232323;
+      font-size: 24px;
+      text-decoration: none; }
+      div.navegacion div.anterior a:hover, div.navegacion div.siguiente a:hover {
+        color: #2962FF;
+        text-decoration: underline; }
+  div.navegacion div.siguiente {
+    float: right; }
+    @media screen and (max-width: 768px) {
+      div.navegacion div.siguiente {
+        float: none; } }
+  div.navegacion div.anterior {
+    float: left; }
+
+footer {
+  margin-top: 60px;
+  padding: 23px;
+  border-top: solid 2px #2962FF;
+  text-align: left;
+  font-size: 15px; }
+  footer h4 {
+    margin: 0 0 10px;
+    font-size: 17px; }
+  @media screen and (max-width: 768px) {
+    footer {
+      padding: 23px 0; } }

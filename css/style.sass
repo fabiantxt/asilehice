@@ -1,0 +1,194 @@
+@import url('normalize.css')
+@import url('animate.css')
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono')
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black')
+
+//colors
+
+$a: #2962FF
+$n: #232323
+$g: #4A4A4A
+$b: #fff
+
+//fonts
+
+$bold: 'Archivo Black', sans-serif
+$mono: 'Roboto Mono', monospace
+
+// mixins
+
+=transition($time)
+  transition: all $time ease
+  -webkit-transition: all $time ease
+  -moz-transition: all $time ease
+  -o-transition: all $time ease
+
+=blur($blur)
+  -webkit-filter: blur($blur)
+  -moz-filter: blur($blur)
+  -o-filter: blur($blur)
+  filter: blur($blur)
+
+html
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+*, *:before, *:after 
+  -webkit-box-sizing: inherit
+  -moz-box-sizing: inherit
+  box-sizing: inherit
+
+// generales
+
+a.link
+  color: $a
+  font-family: $bold
+  font-size: 18px
+  text-decoration: underline
+
+.container
+  width: 700px
+  margin: 0 auto
+  @media screen and (max-width: 768px)
+    width: 90%
+
+
+body
+  font-family: $mono
+  font-size: 17px
+  text-align: center
+  color: $g
+  line-height: 23px
+  -webkit-font-smoothing: antialiased
+  -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px
+  -webkit-overflow-scrolling: touch
+
+h1
+  margin: 0
+  padding: 0
+
+h2, h3
+  margin: 0
+  font-family: $bold
+
+
+header
+  border-bottom: solid 2px $a
+  padding: 16px 0
+  text-align: left
+  h1, div.search
+    display: inline-block
+    vertical-align: middle
+  h1
+    width: 300px
+    font-size: 17px
+    text-align: left
+    @media screen and (max-width: 768px)
+      width: 100%
+  div.search
+    width: 350px
+    text-align: right
+    @media screen and (max-width: 768px)
+      display: none
+
+article
+  padding: 40px 0
+  text-align: left
+  ul
+    margin: 0
+    padding: 0
+    li
+      list-style: none
+      padding: 0
+      margin: 0
+      display: inline
+      a.cat
+        border: solid 2px $a
+        padding: 4px 6px
+        border-radius: 3px
+        text-decoration: none
+        color: $a
+        text-transform: uppercase
+        +transition(.3s)
+        font-size: 14px
+        &:hover
+          background-color: $a
+          color: $b
+  h2
+    margin-top: 20px
+    font-size: 60px
+    line-height: 65px
+    color: $n
+    @media screen and (max-width: 768px)
+      font-size: 53px
+      line-height: 53px
+  img
+    width: 120%
+    margin-left: -10%
+    height: auto
+    margin-top: 20px
+    margin-bottom: 20px
+    @media screen and (max-width: 768px)
+      width: 100%
+      margin-left: 0
+  .author
+    background-color: $a
+    color: $b
+    padding: 40px 0
+    margin: 40px 0 0 
+    .blanco
+      color: $b
+
+section#comentarios
+  text-align: left
+  h4
+    font-size: 26px
+    font-family: $bold
+    margin: 20px 0
+  img
+    @media screen and (max-width: 768px)
+      width: 100%
+
+div.navegacion
+  margin: 20px 0
+  
+  div.anterior, div.siguiente
+    display: inline-block
+    vertical-align: top
+    width: 48%
+    text-align: left
+    margin-right: 5px
+    line-height: 36px
+    @media screen and (max-width: 768px)
+      width: 100%
+    p
+      margin: 0
+    a
+      +transition(.3s)
+      color: $n
+      font-size: 24px
+      text-decoration: none
+      &:hover
+        color: $a
+        text-decoration: underline
+  
+  div.siguiente
+    float: right
+    @media screen and (max-width: 768px)
+      float: none
+  div.anterior
+    float: left
+    
+
+footer
+  margin-top: 60px
+  padding: 23px
+  border-top: solid 2px $a
+  text-align: left
+  font-size: 15px
+  h4
+    margin: 0 0 10px
+    font-size: 17px
+  @media screen and (max-width: 768px)
+    padding: 23px 0

@@ -44,8 +44,9 @@ html
 a.link
   color: $a
   font-family: $bold
-  font-size: 18px
+  font-size: 16px
   text-decoration: underline
+  font-weight: normal
 
 .container
   width: 700px
@@ -59,7 +60,7 @@ body
   font-size: 17px
   text-align: center
   color: $g
-  line-height: 23px
+  line-height: 26px
   -webkit-font-smoothing: antialiased
   -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px
   -webkit-overflow-scrolling: touch
@@ -71,6 +72,7 @@ h1
 h2, h3
   margin: 0
   font-family: $bold
+  font-weight: normal
 
 
 header
@@ -146,6 +148,7 @@ section#comentarios
     font-size: 26px
     font-family: $bold
     margin: 20px 0
+    font-weight: normal
   img
     @media screen and (max-width: 768px)
       width: 100%
@@ -192,3 +195,7 @@ footer
     font-size: 17px
   @media screen and (max-width: 768px)
     padding: 23px 0
+
+.syntaxhighlighter
+  margin-left: -60px
+  width: 110%

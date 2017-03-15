@@ -15,8 +15,9 @@ html {
 a.link {
   color: #2962FF;
   font-family: "Archivo Black", sans-serif;
-  font-size: 18px;
-  text-decoration: underline; }
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: normal; }
 
 .container {
   width: 700px;
@@ -30,7 +31,7 @@ body {
   font-size: 17px;
   text-align: center;
   color: #4A4A4A;
-  line-height: 23px;
+  line-height: 26px;
   -webkit-font-smoothing: antialiased;
   -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
   -webkit-overflow-scrolling: touch; }
@@ -41,7 +42,8 @@ h1 {
 
 h2, h3 {
   margin: 0;
-  font-family: "Archivo Black", sans-serif; }
+  font-family: "Archivo Black", sans-serif;
+  font-weight: normal; }
 
 header {
   border-bottom: solid 2px #2962FF;
@@ -122,7 +124,8 @@ section#comentarios {
   section#comentarios h4 {
     font-size: 26px;
     font-family: "Archivo Black", sans-serif;
-    margin: 20px 0; }
+    margin: 20px 0;
+    font-weight: normal; }
   @media screen and (max-width: 768px) {
     section#comentarios img {
       width: 100%; } }
@@ -172,3 +175,7 @@ footer {
   @media screen and (max-width: 768px) {
     footer {
       padding: 23px 0; } }
+
+.syntaxhighlighter {
+  margin-left: -60px;
+  width: 110%; }

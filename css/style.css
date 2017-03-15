@@ -49,6 +49,8 @@ header {
   border-bottom: solid 2px #2962FF;
   padding: 16px 0;
   text-align: left; }
+  header a {
+    color: #232323; }
   header h1, header div.search {
     display: inline-block;
     vertical-align: middle; }
@@ -111,6 +113,12 @@ article {
       article img {
         width: 100%;
         margin-left: 0; } }
+  article .content a {
+    color: #2962FF;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: normal; }
   article .author {
     background-color: #2962FF;
     color: #fff;

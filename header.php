@@ -7,17 +7,18 @@
     <title>
     <?php
       global $page, $paged;
-      wp_title( '|', true, 'right' );
+      wp_title( '', true, 'right' );
       bloginfo( 'name' );
       $site_description = get_bloginfo( 'description', 'display' );
       if ( $site_description && ( is_home() || is_front_page() ) )
-      echo " | $site_description";
+      echo " $site_description";
       if ( $paged >= 2 || $page >= 2 )
-      echo ' | ' . sprintf( __( 'Page %s', 'twentyten' ), max( $paged, $page ) );
+      echo ' ' . sprintf( __( 'Page %s', 'twentyten' ), max( $paged, $page ) );
       ?>
     </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="1352899241457362" />
     <link rel="shortcut icon" type="image/png" href="<?php bloginfo(template_url); ?>/favicon.png"/>
     <link rel="stylesheet" href="<?php bloginfo(template_url); ?>/css/style.css">
     <link rel="stylesheet" href="<?php bloginfo(template_url); ?>/css/animate.css">
@@ -43,6 +44,17 @@
 
     <!-- End FB Sharing for WP -->
 
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-93744549-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
   </head>
   
   <body>
@@ -52,7 +64,7 @@
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/es_MX/sdk.js#xfbml=1&version=v2.8&appId=260201560670298";
+      js.src = "//connect.facebook.net/es_MX/sdk.js#xfbml=1&version=v2.8&appId=1352899241457362";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 

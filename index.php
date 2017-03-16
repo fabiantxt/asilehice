@@ -27,7 +27,7 @@
         <?php the_content(); ?>
       </div>
       <div class="author">
-        <div class="container">Así le hizo: <a class="link blanco"><?php the_author(); ?></a>, <?php the_date();?>.</div>
+        <div class="container">Por: <a href="http://fabian.mx" class="link blanco"><?php the_author(); ?></a>, <?php the_date();?>.</div>
       </div>
     </article>
 
@@ -35,13 +35,13 @@
 
 <?php else : ?>
 
-  <h2>Página no encontrada</h2>
+  <h2 style="margin: 60px 0;">Página no encontrada</h2>
 
 <?php endif; ?>
 
     <section id="comentarios">
       <div class="container">
-        <h4>¿Tu cómo le hiciste?</h4>
+        <h4>Habla ahora o calla para siempre</h4>
         <div class="facebook">
           
           <div class="fb-comments" data-href="<?php the_permalink(); ?>" data-numposts="3" width="700"></div>

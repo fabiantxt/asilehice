@@ -115,6 +115,14 @@ article {
     font-size: 16px;
     text-decoration: underline;
     font-weight: normal; }
+  article .content ul {
+    list-style: disc !important; }
+    article .content ul li {
+      margin-bottom: 5px;
+      display: block;
+      padding-left: 20px; }
+      article .content ul li:before {
+        content: ' * '; }
   article .author {
     background-color: #2962FF;
     color: #fff;

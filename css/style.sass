@@ -132,9 +132,7 @@ article
     height: auto
     margin-top: 20px
     margin-bottom: 20px
-    // @media screen and (max-width: 768px)
-    //   width: 120%
-    //   margin-left: -10%
+    
   .content
     a
       color: $a
@@ -142,6 +140,15 @@ article
       font-size: 16px
       text-decoration: underline
       font-weight: normal
+    ul
+      list-style: disc !important
+      li
+        margin-bottom: 5px
+        display: block
+        padding-left: 20px
+        &:before
+          content: ' * '
+
   .author
     background-color: $a
     color: $b
